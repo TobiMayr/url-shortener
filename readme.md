@@ -62,7 +62,8 @@ The server will return `HTTP/1.1 301 Moved Permanently` and then redirect to the
 
 The `sqlite3` database contains two tables, `url` and `visit`,
 
-![url table](url_table.png?raw=true "Title")
+![url table](url_table.png?raw=true "url Table")
+![visit table](visit_table.png?raw=true "visit Table")
 
 ## Tests
 
