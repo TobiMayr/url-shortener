@@ -5,7 +5,9 @@ from django.db import models
 
 
 def generate_id():
-    '''Generate an 8-character long hexadecimal ID'''
+    """
+    Generate an 8-character long hexadecimal ID
+    """
     possible = hexlify(os.urandom(4)).decode('ascii')
     try:
         Url.objects.get(id=possible)

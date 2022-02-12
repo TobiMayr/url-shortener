@@ -1,0 +1,10 @@
+[
+  {
+    "pk": "id",
+    "model": "urls.url",
+    "fields": {
+      "id": "validID0",
+      "original_url": "https://example.com/long/url/that/would/need/some/shortening"
+    }
+  }
+]
