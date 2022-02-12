@@ -7,7 +7,7 @@ from urls.serializers import UrlSerializer
 from urls.models import Url
 
 
-@api_view(['GET', 'POST'])
+@api_view(['POST'])
 @permission_classes((permissions.AllowAny,))
 def url_add(request):
     """
