@@ -11,7 +11,7 @@ ENV PYTHONUNBUFFERED 1s
 
 # project variables
 ENV PORT=8000
-ENV SETTINGS=production
+ARG SETTINGS=production
 ENV SETTINGS_STRING="--settings=urlshortener.settings.$SETTINGS"
 
 # install environment dependencies
