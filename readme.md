@@ -79,3 +79,14 @@ Running the tests requires to install every dependency (I used Python 3.9):\
 `coverage run manage.py test --settings=urlshortener.settings.test`\
 `coverage report`\
 Currently it's 98%
+
+## Ideas for improvement
+
+### Scalability
+- create cloud instance for the database (right now db is part of django project)
+- run this API in kubernetes (e.g. on AWS EKS)
+- add an in-memory db that is used for the get requests
+
+### Functionality
+- have user authentication that enables individual users to manage their urls
+- let the user choose how long the shortUrl should be valid or set a TTL for every url
