@@ -74,4 +74,8 @@ Running the tests requires to install every dependency (I used Python 3.9):\
 `pip install -r requirements.txt`\
 `python manage.py makemigrations --settings=urlshortener.settings.test`\
 `python manage.py migrate --settings=urlshortener.settings.test`\
-`./manage.py test --settings=urlshortener.settings.test`
+`./manage.py test --settings=urlshortener.settings.test`\
+### To run coverage
+`coverage run manage.py test --settings=urlshortener.settings.test`\
+`coverage report`\
+Currently it's 98%
