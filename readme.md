@@ -80,6 +80,17 @@ Running the tests requires to install every dependency (I used Python 3.9):\
 `coverage report`\
 Currently it's 98%
 
+## FAQ
+
+#### Why generate a random id (for short url) instead of a hash?
+- Two different long urls could create the same hash. Collisions could occur. That's why a unique id is generated.
+
+#### Why not filter duplicate original URLs to save space in the database?
+- It's a tradeoff.
+  - Pros: Database size smaller
+  - Cons: Complexity of the code slightly increases, checking if the URL exists is an additional operation why would slow down creation of new links
+- I chose to allow duplicate original/long URLs. Also, because a more elaborate url-shortener would probably have different users and allow for different TTLs of the same URL.
+
 ## Ideas for improvement
 
 ### Code
@@ -95,3 +106,4 @@ Currently it's 98%
 ### Functionality
 - have user authentication that enables individual users to manage their urls
 - let the user choose how long the shortUrl should be valid or set a TTL for every url
+- have option to set a short url instead of generating a random one
