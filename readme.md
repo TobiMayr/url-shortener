@@ -82,9 +82,14 @@ Currently it's 98%
 
 ## Ideas for improvement
 
+### Code
+- add logging
+- find a better way to log visits. Right now, only the existing endpoints get tracked. For every new request, code has to be added. Needs to be made more generic
+- other fields might be interesting to track. Like latency or status code
+
 ### Scalability
 - create cloud instance for the database (right now db is part of django project)
-- run this API in kubernetes (e.g. on AWS EKS)
+- run this API in kubernetes (e.g. on AWS EKS). Scaling horizontally, accessing same RDS (which also can be scaled)
 - add an in-memory db that is used for the get requests
 
 ### Functionality
